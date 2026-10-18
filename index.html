@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Cabinet Excellence Comptable au Bénin : expertise comptable, audit, conseil et accompagnement des entreprises.">
+
+    <title>Cabinet Excellence Comptable | Bénin</title>
+
+    <style>
+        :root {
+            --bleu: #0b1730;
+            --bleu-clair: #142747;
+            --or: #d4ad62;
+            --blanc: #ffffff;
+            --gris: #f4f6f9;
+            --texte: #344054;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--texte);
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        header {
+            background: var(--bleu);
+            color: var(--blanc);
+            padding: 18px 7%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: var(--or);
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            display: block;
+            color: var(--blanc);
+            font-size: 11px;
+            letter-spacing: 3px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        nav a {
+            color: var(--blanc);
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: var(--or);
+        }
+
+        .hero {
+            min-height: 520px;
+            padding: 90px 8%;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(110deg, #0b1730 0%, #142747 100%);
+            color: var(--blanc);
+        }
+
+        .hero-content {
+            max-width: 760px;
+        }
+
+        .badge {
+            color: var(--or);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: clamp(34px, 6vw, 60px);
+            line-height: 1.15;
+            margin: 20px 0;
+        }
+
+        h1 span {
+            color: var(--or);
+        }
+
+        .hero p {
+            max-width: 620px;
+            color: #e0e6f0;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: var(--or);
+            color: var(--bleu);
+            padding: 13px 23px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin: 5px 8px 5px 0;
+        }
+
+        .button-outline {
+            border: 1px solid var(--or);
+            color: var(--blanc);
+            padding: 12px 22px;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        section {
+            padding: 75px 8%;
+            scroll-margin-top: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title small {
+            color: #98712e;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .section-title h2 {
+            color: var(--bleu);
+            font-size: clamp(26px, 4vw, 38px);
+            margin: 10px 0;
+        }
+
+        .about {
+            background: var(--blanc);
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .services {
+            background: var(--gris);
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: var(--blanc);
+            padding: 28px;
+            border-radius: 8px;
+            border-bottom: 3px solid var(--or);
+            box-shadow: 0 5px 25px rgba(11, 23, 48, 0.06);
+        }
+
+        .card .icon {
+            font-size: 30px;
+        }
+
+        .card h3 {
+            color: var(--bleu);
+            margin: 12px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+        }
+
+        .team {
+            text-align: center;
+        }
+
+        .team p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .news {
+            background: var(--gris);
+        }
+
+        .contact {
+            text-align: center;
+            background: var(--bleu-clair);
+            color: var(--blanc);
+        }
+
+        .contact h2 {
+            color: var(--blanc);
+        }
+
+        .contact p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #071020;
+            color: #d5dbea;
+            text-align: center;
+            padding: 25px 7%;
+            font-size: 13px;
+        }
+
+        footer a {
+            color: var(--or);
+        }
+
+        @media (max-width: 800px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav {
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .hero {
+                padding: 65px 7%;
+            }
+
+            section {
+                padding: 55px 7%;
+            }
+
+            .cards {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 520px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="#accueil">
+            EXCELLENCE
+            <span>COMPTABLE & CONSEIL</span>
+        </a>
+
+        <nav aria-label="Navigation principale">
+            <a href="#accueil">Accueil</a>
+            <a href="#cabinet">Le cabinet</a>
+            <a href="#services">Services</a>
+            <a href="#equipe">Équipe</a>
+            <a href="#actualites">Actualités</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="accueil">
+            <div class="hero-content">
+                <div class="badge">
+                    Expertise · Audit · Conseil
+                </div>
+
+                <h1>
+                    La confiance financière,
+                    <span>notre engagement.</span>
+                </h1>
+
+                <p>
+                    Nous accompagnons les entreprises et les entrepreneurs
+                    dans leur gestion comptable, leur organisation financière
+                    et leur développement, avec rigueur et professionnalisme.
+                </p>
+
+                <a href="#services" class="button">
+                    Découvrir nos services
+                </a>
+
+                <a href="#contact" class="button-outline">
+                    Nous contacter
+                </a>
+            </div>
+        </section>
+
+        <section class="about" id="cabinet">
+            <div class="section-title">
+                <small>Qui sommes-nous ?</small>
+                <h2>Un partenaire pour votre réussite</h2>
+            </div>
+
+            <p>
+                Le Cabinet Excellence Comptable a pour vocation
+                d'accompagner les organisations dans la maîtrise de leurs
+                obligations comptables, la compréhension de leurs résultats
+                et l'amélioration de leur gestion financière.
+                Notre approche repose sur la rigueur, la confidentialité,
+                l'intégrité et la qualité du service.
+            </p>
+        </section>
+
+        <section class="services" id="services">
+            <div class="section-title">
+                <small>Notre expertise</small>
+                <h2>Des services adaptés à vos besoins</h2>
+            </div>
+
+            <div class="cards">
+                <article class="card">
+                    <div class="icon">📊</div>
+                    <h3>Expertise comptable</h3>
+                    <p>
+                        Organisation comptable, suivi des comptes,
+                        préparation des états financiers et accompagnement
+                        dans la gestion de votre activité.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">🔎</div>
+                    <h3>Audit et contrôle</h3>
+                    <p>
+                        Missions d'audit et travaux de contrôle adaptés
+                        aux besoins de votre organisation, dans le respect
+                        des règles professionnelles applicables.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">💼</div>
+                    <h3>Conseil aux entreprises</h3>
+                    <p>
+                        Accompagnement dans le pilotage financier,
+                        l'analyse des résultats et l'amélioration
+                        des processus de gestion.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">🧾</div>
+                    <h3>Fiscalité</h3>
+                    <p>
+                        Assistance en matière de suivi fiscal,
+                        de préparation des obligations et de compréhension
+                        des règles applicables à votre activité.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">📈</div>
+                    <h3>Gestion financière</h3>
+                    <p>
+                        Analyse financière, suivi de trésorerie,
+                        tableaux de bord et aide à la décision.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">🤝</div>
+                    <h3>Accompagnement</h3>
+                    <p>
+                        Conseils adaptés aux entrepreneurs, PME et
+                        organisations souhaitant structurer leur activité
+                        et mieux maîtriser leurs finances.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="team" id="equipe">
+            <div class="section-title">
+                <small>Nos compétences</small>
+                <h2>Une approche fondée sur la confiance</h2>
+            </div>
+
+            <p>
+                Notre ambition est de proposer un accompagnement rigoureux,
+                confidentiel et adapté aux réalités de chaque organisation.
+                Cette rubrique pourra présenter les membres réels du cabinet,
+                leurs qualifications et leurs expériences professionnelles.
+            </p>
+        </section>
+
+        <section class="news" id="actualites">
+            <div class="section-title">
+                <small>Restez informés</small>
+                <h2>Actualités comptables et fiscales</h2>
+            </div>
+
+            <div class="cards">
+                <article class="card">
+                    <h3>Actualités comptables</h3>
+                    <p>
+                        Retrouvez prochainement nos informations et conseils
+                        sur la comptabilité des entreprises.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Informations fiscales</h3>
+                    <p>
+                        Des contenus pédagogiques pour mieux comprendre
+                        les obligations fiscales applicables.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3>Conseils de gestion</h3>
+                    <p>
+                        Découvrez des pistes pour améliorer votre
+                        organisation et votre suivi financier.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="section-title">
+                <small>Parlons de votre projet</small>
+                <h2>Contactez notre cabinet</h2>
+            </div>
+
+            <p>
+                Vous souhaitez en savoir plus sur nos services ?
+                Prenons contact pour discuter de vos besoins.
+            </p>
+
+            <!-- Remplacer le numéro par celui du cabinet -->
+            <a
+                class="button"
+                href="https://wa.me/22900000000"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Contacter sur WhatsApp
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="year"></span> Cabinet Excellence Comptable.
+            Tous droits réservés.
+        </p>
+        <p>
+            Bénin · Expertise comptable · Audit · Conseil
+        </p>
+        <p>
+            Les missions réglementées sont exercées uniquement par des
+            professionnels dûment habilités.
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+  </html>
